@@ -9,7 +9,13 @@ namespace DoorControl.Unit.Test
 {
    [TestFixture]
     public class DoorControlUnitTest
-    {
+   {
+      private DoorFake doorFake;
 
-    }
+      [SetUp]
+      public void Setup()
+      {
+         doorFake = new DoorFake();
+      }
+   }
 }
