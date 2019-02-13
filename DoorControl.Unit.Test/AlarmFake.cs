@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DoorControl.Unit.Test
+{
+    class AlarmFake : IAlarm
+    {
+        public int Counter = 0;
+        public void RaiseAlarm()
+        {
+            Counter++;
+        }
+    }
+}
