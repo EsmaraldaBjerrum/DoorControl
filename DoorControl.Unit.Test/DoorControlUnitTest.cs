@@ -28,6 +28,17 @@ namespace DoorControl.Unit.Test
             _uut.RaiseAlarm();
             Assert.That(_alarm.);
         }
+   {
+      private IDoor doorFake;
+      private IUserValidation userValidationFake;
 
-    }
+      [SetUp]
+      public void Setup()
+      {
+         doorFake = new DoorFake();
+         userValidationFake = new UserValidationFake();
+
+         doorFake.
+      }
+   }
 }
