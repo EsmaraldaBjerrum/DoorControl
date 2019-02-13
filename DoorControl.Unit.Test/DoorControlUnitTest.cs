@@ -13,10 +13,10 @@ namespace DoorControl.Unit.Test
     {
         
        
-       private IAlarm _alarm = new AlarmFake();
+       private AlarmFake _alarm = new AlarmFake();
         private DoorControlClass _uut;
-        private IDoor doorFake;
-        private IUserValidation userValidationFake;
+        private DoorFake doorFake;
+        private UserValidationFake userValidationFake;
 
         [SetUp]
         public void SetUp()
@@ -33,6 +33,8 @@ namespace DoorControl.Unit.Test
             Assert.That(_alarm.);
         }
    
+       [Test]
+       public void 
       
    }
 }
