@@ -8,5 +8,6 @@ namespace DoorControl
 {
     interface IEntryNotification
     {
+      
     }
 }

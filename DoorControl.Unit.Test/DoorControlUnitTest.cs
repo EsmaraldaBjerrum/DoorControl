@@ -10,12 +10,16 @@ namespace DoorControl.Unit.Test
    [TestFixture]
     public class DoorControlUnitTest
    {
-      private DoorFake doorFake;
+      private IDoor doorFake;
+      private IUserValidation userValidationFake;
 
       [SetUp]
       public void Setup()
       {
          doorFake = new DoorFake();
+         userValidationFake = new UserValidationFake();
+
+         doorFake.
       }
    }
 }
