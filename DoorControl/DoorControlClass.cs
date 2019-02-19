@@ -36,6 +36,8 @@ namespace DoorControl
           {
             _entryNotification.NotifyEntryDenied();
           }
+
+
        }
     }
 }
