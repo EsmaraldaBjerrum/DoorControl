@@ -13,7 +13,7 @@ namespace DoorControl.Unit.Test
     {
         
        
-       private IAlarm _alarm = new AlarmFake();
+       private AlarmFake _alarm = new AlarmFake();
         private DoorControlClass _uut;
         private IDoor doorFake;
         private IUserValidation userValidationFake;
@@ -30,7 +30,7 @@ namespace DoorControl.Unit.Test
         public void Alarm_RaiseAlarm_Called()
         {
             _uut.RaiseAlarm();
-            Assert.That(_alarm.);
+            Assert.That(_alarm.Counter, Is.EqualTo(1));
         }
    
       
