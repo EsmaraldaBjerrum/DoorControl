@@ -15,8 +15,8 @@ namespace DoorControl.Unit.Test
        
        private AlarmFake _alarm = new AlarmFake();
         private DoorControlClass _uut;
-        private IDoor doorFake;
-        private IUserValidation userValidationFake;
+        private DoorFake doorFake;
+        private UserValidationFake userValidationFake;
 
         [SetUp]
         public void SetUp()
@@ -33,6 +33,8 @@ namespace DoorControl.Unit.Test
             Assert.That(_alarm.Counter, Is.EqualTo(1));
         }
    
+       [Test]
+       public void 
       
    }
 }
